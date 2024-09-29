@@ -10,16 +10,15 @@ function pertenceFibonacci(numeroInformado) {
       c = a + b;
       a = b;
       b = c;
-      
-      console.log(b);
-     
+      if( b === numeroInformado){
+        s = 1
     }
-  
   }
-  
-  if (s === 1) {
+
+  if (s = 1) {
     console.log(numeroInformado + " pertence à sequência de Fibonacci.");
   } else {
     console.log(numeroInformado + " não pertence à sequência de Fibonacci.");   
   
   }
+}
