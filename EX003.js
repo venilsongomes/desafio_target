@@ -1,3 +1,5 @@
+
+const fs =  require('fs');
 function analisarFaturamento(dados) {
   // Filtrar dias com faturamento
   const diasComFaturamento = dados.filter(dia => dia.valor > 0);
@@ -22,7 +24,6 @@ function analisarFaturamento(dados) {
   };
 }
 
-// Carregar os dados do arquivo JSON (substitua 'dados.json' pelo caminho correto)
 fetch('dados.json')
   .then(response => response.json())
   .then(dados => {
